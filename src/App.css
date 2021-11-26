@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+nav {
+  /* background: rgb(0, 0, 0); */
+  position: fixed;
+  display: flex;
+  width: 100%;
+  /* justify-content: space-between; */
+}
+.nav_button{
+  background: #000;
+  border: none;
+}
+.nav_link{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+}
+.nav_img{
+  height: 50px;
+  margin-right: 25px;
+}
+
+.showNav{
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.657) 35%, rgba(0, 0, 0, 0) 100%);
+  visibility: visible;
+}
+.hideNav{
+  visibility: hidden;
+}
+
+.hideNav .nav_button{
+  visibility: visible;
+}
+
+span,
+span::before,
+span::after{
+  display: block;
+  width: 40px;
+  height: 3px;
+  position: relative;
+  border-radius: 3px;
+  background: #fff;
+  transition: all .5s ease-in-out;
+}
+span::before,
+span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+}
+span::before{
+  transform: translateY(-12px);
+}
+span::after{
+  transform: translateY(12px);
+}
+.showNav span::before{
+  transform: rotate(45deg);
+}
+.showNav span::after{
+  transform: rotate(-45deg);
+}
+.showNav span{
+  background: transparent;
+}
+
+ul{
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  margin-left: 15px;
+  list-style-type: none;
+}
+
+section * {
+  margin: 20px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+
+}
+/* 
+input {
+  background-color: rgba(0, 0, 0, 0.397);
+  color: darkgrey;
+  border:medium ;
+} */
+.menue{
+  /* display: inline; */
+  display: flex;
+  margin: 5px;
+}
+
+.icon{
+  margin-right: 3px;
+}
+
+.nom{
+  align-self: center;
+  font-family:cursive;
+  font-size: 40px;
+  margin: 30px;
+}
+
+.media-nom{
+  display: none;
+}
+
+.Link {
+  margin-right: 10px;
+  text-decoration: none;
+  /* justify-content: center; */
+  /* display: flex; */
+  color:darkgrey;
+  
+}
+
+.App {
+  justify-content: center;
+  width: 60%;
+  margin: auto;
+}
+
+#head{
+  margin-top: 30px;
+  justify-content: center;
+  display: flex;
+}
+
+#moi {
+  height: 200px;
+  border-radius: 50%;
+}
+
+#cv{
+  width: 400px;
+}

@@ -1,0 +1,38 @@
+/* .border{
+    border-radius: 5%;
+    border: 2px solid;
+    margin: 5px;
+  }
+
+.border-1{
+    width: 500px;
+  }
+  
+  .border-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  } */
+
+  h3{
+    text-align: center;
+  }
+
+  .info{
+    display: flex;
+    justify-content: space-around;
+    /* margin: 10px; */
+    /* flex-direction: column; */
+    /* justify-content: center;*/
+  }
+  
+  .info_ul{
+    display: block;
+    background: rgba(0, 0, 0, 0.397);
+  }
+
+  .info_block{
+    width: 30%;
+  }
